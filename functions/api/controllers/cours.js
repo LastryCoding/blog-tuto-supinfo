@@ -21,7 +21,7 @@ exports.create = (req, res) => {
   coursRef
     .add(newCours)
     .then((doc) => {
-      res.json({ message: `document ${doc.id} created successfully` });
+      res.status(201).json({ message: `document ${doc.id} created successfully` });
     })
     .catch((err) => {
       res.status(500).json({ error: "something went wrong" });

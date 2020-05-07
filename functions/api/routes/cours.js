@@ -1,6 +1,5 @@
 const express = require("express");
 const router = express.Router();
-// const FBAuth = require("../../utils/fbAuth");
 const {
   addCoursDetails,
   create,
